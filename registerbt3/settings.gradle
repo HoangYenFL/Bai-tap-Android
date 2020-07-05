@@ -1,0 +1,2 @@
+rootProject.name='registerbt3'
+include ':app'

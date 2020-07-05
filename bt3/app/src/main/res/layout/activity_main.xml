@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffdab9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtten"
+        android:layout_width="262dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="RINGMIN"
+        android:textColor="#3CBCB0"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edname"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Ringmin đợi bạn đến đó!"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtten" />
+
+    <CheckBox
+        android:id="@+id/chx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Bạn đã đến"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edname" />
+
+    <Button
+        android:id="@+id/btndanghap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Đăng nhập"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chx" />
+
+    <ImageButton
+        android:id="@+id/imgbtn"
+        android:layout_width="112dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/images"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btndanghap" />
+
+    <TextView
+        android:id="@+id/txttog"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/togbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgbtn" />
+
+    <ToggleButton
+        android:id="@+id/togbtn"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="50dp"
+        android:textOff="Đến đây"
+        android:textOn="Tạm biệt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txttog" />
+
+    <Switch
+        android:layout_width="166dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:text="chọn này đi"
+        android:textSize="20dp"
+        android:textOn="đã chọn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgbtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
