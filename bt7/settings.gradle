@@ -1,0 +1,2 @@
+rootProject.name='bt7'
+include ':app'
